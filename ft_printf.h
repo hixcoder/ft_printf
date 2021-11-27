@@ -21,9 +21,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-# define LOWER_BASE "0123456789abcdef"
-# define UPPER_BASE "0123456789ABCDEF"
-
 int	ft_printf(const char *str, ...);
 int	ft_putchar(char c);
 int	ft_putstr(char *s);
