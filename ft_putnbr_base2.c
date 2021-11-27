@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_base2.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hboumahd <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/27 11:46:04 by hboumahd          #+#    #+#             */
+/*   Updated: 2021/11/27 11:46:57 by hboumahd         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static int	ft_strlen1(char *str)
@@ -15,7 +27,7 @@ static int	ft_strlen1(char *str)
 int	ft_putnbr_base2(unsigned long nbr, char *base)
 {
 	unsigned long	len_base;
-	int			count;
+	int				count;
 
 	len_base = (unsigned long) ft_strlen1(base);
 	count = 0;
