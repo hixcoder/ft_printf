@@ -24,10 +24,10 @@ FLAGS = -Wall -Wextra -Werror
 
 
 
-%.o : %.c
+%.o : %.c ${INCLUDE}
 	${CC} ${FLAGS} -c $< -o $@
 
-$(NAME) : ${SRCOBJ} ${INCLUDE}
+$(NAME) : ${SRCOBJ} 
 	ar rcs ${NAME} ${SRCOBJ} 
 
 all : $(NAME)
